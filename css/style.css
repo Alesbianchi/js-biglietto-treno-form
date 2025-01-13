@@ -6,7 +6,7 @@
 
 /* regole contenitori di pagina */
 .container{
-    width: 60%;
+    width: 80%;
     border: 1px solid black;
     margin: 5% auto;
     background-color: white;
@@ -15,9 +15,15 @@
 
 /* regole colonne */
 .col{
-    width: 20%;
+    width: 26%;
     margin-bottom: 2%;
     margin-top: 2%;
+}
+
+
+.wt-16{
+    width: 16%;
+    
 }
 
 /* regole righe */
@@ -27,7 +33,28 @@
     justify-content: space-around;
 }
 
+
+
 /* regole di stile */
 body{
     background-color: brown;
+}
+
+
+.button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+.user-name{
+    margin-top: 30%;
 }
