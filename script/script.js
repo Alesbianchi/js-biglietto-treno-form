@@ -12,15 +12,17 @@
 
 // INPUT
 
-// l'utente inserisce la sua età
-const field = document.getElementById('userage');
+// l'utente inserisce il suo nome
+const field = document.getElementById('username');
 
+// l'utente inserisce la sua età
+const titleField = document.getElementById('title-field');
 
 // l'utente inserisce il numero di km
 const distance = document.getElementById('distance');
 
 // l'utente preme il tasto genera
-const button = document.querySelector('button');
+const button = document.getElementById('generate-button');
 
 
 

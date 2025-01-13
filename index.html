@@ -7,96 +7,75 @@
     <title>Biglietto del treno</title>
 </head>
 <body>
-    <form action="">
-        <input type="number" value="età" placeholder="inserisci l'età" id="userage">
-        <input type="number" placeholder="numero KM" id="distance">
-        <button class="button">Genera</button>
-    </form>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <div>Nome e Cognome</div>
+                    <input id="username" type="text" placeholder="inserisci il nome e cognome">
+                </div>
     
+                <div class="col">
+                    <div>Km da percorrere</div>
+                    <input id="distance" type="number" placeholder="inserisci i km"> 
+                </div>
+    
+                <div class="col">
+                    <div>Fascia d'età</div>
+                    <select class="form-select" id="title-field">
+                        <option value="minorenne">minorenne</option>
+                        <option value="maggiorenne">maggiorenne</option>
+                        <option value="over">over</option>
+                    </select> 
+                </div>   
+            </div>
+    
+            <div class="row">
+                <div class="col">
+                    <div class="button">
+                        <a href="#" id="generate-button">Genera</a>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="button">
+                        <a href="#">Annulla</a>
+                    </div>
+                </div>
+            </div>
+        </form>   
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col wt-16">
+                <div>NOME PASSEGGERO</div>
+                <div class="user-name" id="user-name"></div>
+            </div>
+        
+            <div class="col wt-16">
+                <div>OFFERTA</div>
+                <div class="type-offer" id="offer-type"></div>
+            </div>
+    
+            <div class="col wt-16">
+                <div>CARROZZA</div>
+                <div class="user-name">5</div>
+            </div>
+    
+            <div class="col wt-16">
+                <div>CODICE CP</div>
+                <div class="user-name">92911</div>
+            </div>
+    
+            <div class="col wt-16">
+                <div>COSTO BIGLIETTO</div>
+                <div class="final-price" id="final-price"></div>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="./script/script.js"></script>
 </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="container">
-    <div class="row">
-        
-        <div class="col">
-            <div>Nome e Cognome</div>
-            <input id="username" type="text" placeholder="inserisci il nome e cognome">
-        </div>
-
-        <div class="col">
-            <div>Km da percorrere</div>
-            <input id="distance" type="number" placeholder="inserisci i km"> 
-        </div>
-
-        <div class="col">
-            <div>Fascia d'età</div>
-            <select class="form-select" id="title-field">
-                <option value="minorenne">minorenne</option>
-                <option value="maggiorenne">maggiorenne</option>
-                <option value="over">over</option>
-            </select> 
-        </div>   
-
-    </div>
-
-    <div class="row">
-
-        <div class="col">
-            <div class="button">
-                <a href="#">Genera</a>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="button">
-                <a href="#">Annulla</a>
-            </div>
-        </div>
-
-    </div>   
-</div>
-
-<div class="container">
-
-    <div class="row ">
-        <div class="col wt-16">
-            <div>NOME PASSEGGERO</div>
-            <div class="user-name"></div>
-        </div>
-    
-        <div class="col wt-16">
-            <div>OFFERTA</div>
-            <div class="type-offer"></div>
-
-        </div>
-        <div class="col wt-16">
-            <div>CARROZZA</div>
-            <div class="user-name">5</div>
-
-        </div>
-        <div class="col wt-16">
-            <div>CODICE CP</div>
-            <div class="user-name">92911</div>
-
-        </div>
-        <div class="col wt-16">
-            <div>COSTO BIGLIETTO</div>
-            <div class="final-price"></div>
-        </div>
-    </div>
-
-</div> -->
