@@ -22,11 +22,38 @@ const distance = document.getElementById('distance');
 // l'utente preme il tasto genera
 const button = document.querySelector('button');
 
+
+
 // il PC restituisce un numero
 button.addEventListener('click', () => {
     const userAge = field.value;
     console.log(userAge);
+    console.log(distance.value);
+
+    // ELABORAZIONE
+    let prezzoPc = 0.21 * distance.value;
+
+    // verifico l'eta dell'utente
+    let risultato;
+
+    // SE inferiore a 18 applico 20% Sconto 
+    if (userAge < 18) {
+    risultato = prezzoPc - (prezzoPc * 0.20);
+    
+    
+    // SE ALTRIMENTI superiore a 65 applico 40% Sconto
+}   else if (userAge > 64){
+    risultato = prezzoPc - (prezzoPc * 0.40); 
+    
+    
+}   else{
+    // ALTRIMENTI prezzo pieno (0.21 € al km)
+    risultato = prezzoPc;
+}
+
+console.log(risultato) 
 
 });
 
-// ELABORAZIONE
+
+
