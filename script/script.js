@@ -24,36 +24,56 @@ const distance = document.getElementById('distance');
 // l'utente preme il tasto genera
 const button = document.getElementById('generate-button');
 
+// OUTPUT
+const userNameDisplay = document.getElementById('user-name');
+const offerTypeDisplay = document.getElementById('offer-type');
+const finalPriceDisplay = document.getElementById('final-price');
+
+
+
+
 
 
 // il PC restituisce un numero
-button.addEventListener('click', () => {
-    const userAge = field.value;
-    console.log(userAge);
-    console.log(distance.value);
+button.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    // ottengo i valori inseriti dall'utente
+    const userAge = titleField.value;
+    const userDistance = distance.value; 
+    const userName = field.value; 
+    // console.log(userAge);
+    // console.log(distance.value);
 
     // ELABORAZIONE
-    let prezzoPc = 0.21 * distance.value;
+    let prezzoPc = 0.21 * userDistance;
 
-    // verifico l'eta dell'utente
+    // verifico lo sconto in base all'età
     let risultato;
+    let offerta;
 
     // SE inferiore a 18 applico 20% Sconto 
-    if (userAge < 18) {
+    if (userAge === "minorenne") {
     risultato = prezzoPc - (prezzoPc * 0.20);
+    offerta = "Minorenne - 20% di sconto";
     
     
     // SE ALTRIMENTI superiore a 65 applico 40% Sconto
-}   else if (userAge > 64){
+}   else if (userAge === "over"){
     risultato = prezzoPc - (prezzoPc * 0.40); 
+    offerta = "Over 65 - 40% di sconto";
     
     
 }   else{
     // ALTRIMENTI prezzo pieno (0.21 € al km)
     risultato = prezzoPc;
+    offerta = "Maggiorenne - Prezzo pieno";
 }
 
-console.log(risultato) 
+// Aggiorna il contenuto della pagina con i risultati
+userNameDisplay.textContent = userName || "Nome non inserito";
+offerTypeDisplay.textContent = offerta;
+finalPriceDisplay.textContent = `${risultato.toFixed(2)} €`; 
 
 });
 
