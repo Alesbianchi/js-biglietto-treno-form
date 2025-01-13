@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* regole contenitori di pagina */
+.container{
+    width: 60%;
+    border: 1px solid black;
+    margin: 5% auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* regole colonne */
+.col{
+    width: 20%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+/* regole righe */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* regole di stile */
+body{
+    background-color: brown;
+}
