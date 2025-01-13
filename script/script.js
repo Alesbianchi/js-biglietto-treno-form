@@ -13,10 +13,20 @@
 // INPUT
 
 // l'utente inserisce la sua età
+const field = document.getElementById('userage');
 
 
 // l'utente inserisce il numero di km
+const distance = document.getElementById('distance');
+
+// l'utente preme il tasto genera
+const button = document.querySelector('button');
 
 // il PC restituisce un numero
+button.addEventListener('click', () => {
+    const userAge = field.value;
+    console.log(userAge);
+
+});
 
 // ELABORAZIONE
