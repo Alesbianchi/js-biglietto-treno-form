@@ -11,13 +11,14 @@
     margin: 5% auto;
     background-color: white;
     border-radius: 10px;
+    text-align: center;
 }
 
 /* regole colonne */
 .col{
     width: 26%;
-    margin-bottom: 2%;
     margin-top: 2%;
+    padding-bottom: 2%;
 }
 
 
@@ -32,14 +33,23 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.close{
+  justify-content:center;
+}
+.ticket{
+    border-top: 1px solid black;
+  
 
+}
 
 
 /* regole di stile */
 body{
     background-color: brown;
 }
-
+h2{
+    margin-bottom: 2%;
+}
 
 .button{
     background-color: #4CAF50;
@@ -63,4 +73,21 @@ body{
 }
 .final-price{
     margin-top: 30%;
+}
+
+input{
+    width: 200px;
+    height: 50px;
+}
+
+.label{
+    margin-bottom: 5%;
+    
+}
+
+select{
+    width: 200px;
+    height: 50px;
+
+    text-align: center;
 }

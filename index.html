@@ -9,19 +9,20 @@
 <body>
     <div class="container">
         <form>
+            <h1>COMPRA IL TUO BIGLIETTO</h1>
             <div class="row">
                 <div class="col">
-                    <div>Nome e Cognome</div>
+                    <div class="label">Nome e Cognome</div>
                     <input id="username" type="text" placeholder="inserisci il nome e cognome">
                 </div>
     
                 <div class="col">
-                    <div>Km da percorrere</div>
+                    <div class="label">Km da percorrere</div>
                     <input id="distance" type="number" placeholder="inserisci i km"> 
                 </div>
     
                 <div class="col">
-                    <div>Fascia d'età</div>
+                    <div class="label">Fascia d'età</div>
                     <select class="form-select" id="title-field">
                         <option value="minorenne">minorenne</option>
                         <option value="maggiorenne">maggiorenne</option>
@@ -30,7 +31,7 @@
                 </div>   
             </div>
     
-            <div class="row">
+            <div class="row close">
                 <div class="col">
                     <div class="button">
                         <a href="#" id="generate-button">Genera</a>
@@ -47,7 +48,9 @@
     </div>
     
     <div class="container">
-        <div class="row">
+        <h2>IL TUO BIGLIETTO</h2>
+        
+        <div class="row  ticket">
             <div class="col wt-16">
                 <div>NOME PASSEGGERO</div>
                 <div class="user-name" id="user-name"></div>
