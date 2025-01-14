@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Biglietto del treno</title>
 </head>
@@ -12,21 +16,32 @@
             <h1>COMPRA IL TUO BIGLIETTO</h1>
             <div class="row">
                 <div class="col">
-                    <div class="label">Nome e Cognome</div>
+                    <div class="label">
+                        <i class="fa-regular fa-circle-user"></i>
+                        NOME E COGNOME
+                    </div>
                     <input id="username" type="text" placeholder="inserisci il nome e cognome">
                 </div>
     
                 <div class="col">
-                    <div class="label">Km da percorrere</div>
+                    
+                    <div class="label">
+                        <i class="fa-solid fa-train"></i>
+                        KM DA PERCORRERE
+                    </div>
                     <input id="distance" type="number" placeholder="inserisci i km"> 
+                
                 </div>
     
                 <div class="col">
-                    <div class="label">Fascia d'età</div>
+                    <div class="label">
+                        <i class="fa-regular fa-calendar"></i>
+                        FASCIA D'ETÀ
+                    </div>
                     <select class="form-select" id="title-field">
-                        <option value="minorenne">minorenne</option>
-                        <option value="maggiorenne">maggiorenne</option>
-                        <option value="over">over</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over">Over</option>
                     </select> 
                 </div>   
             </div>
@@ -49,30 +64,31 @@
     
     <div class="container">
         <h2>IL TUO BIGLIETTO</h2>
-        
+        <div class="details">DETTAGLI PASSEGGERI</div>
         <div class="row  ticket">
-            <div class="col wt-16">
-                <div>NOME PASSEGGERO</div>
+            
+            <div class="col wt-16 bg-gr">
+                <div class="label-ticket">NOME PASSEGGERO</div>
                 <div class="user-name" id="user-name"></div>
             </div>
         
             <div class="col wt-16">
-                <div>OFFERTA</div>
+                <div class="label-ticket">OFFERTA</div>
                 <div class="type-offer" id="offer-type"></div>
             </div>
     
             <div class="col wt-16">
-                <div>CARROZZA</div>
+                <div class="label-ticket">CARROZZA</div>
                 <div class="user-name">5</div>
             </div>
     
             <div class="col wt-16">
-                <div>CODICE CP</div>
+                <div class="label-ticket">CODICE CP</div>
                 <div class="user-name">92911</div>
             </div>
     
             <div class="col wt-16">
-                <div>COSTO BIGLIETTO</div>
+                <div class="label-ticket">COSTO BIGLIETTO</div>
                 <div class="final-price" id="final-price"></div>
             </div>
         </div>
